@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation]" verbose="0">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Sales force Automation(failed)" verbose="0">
+    <classes>
+      <class name="testcases.RandomScenariostest">
+        <methods>
+          <include name="verifyTabCustomization35"/>
+          <include name="teardown"/>
+          <include name="beforeMethod"/>
+          <include name="verifyEditedLastNames34"/>
+        </methods>
+      </class> <!-- testcases.RandomScenariostest -->
+      <class name="testcases.Contactstest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="checkMyContacts28"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.Contactstest -->
+      <class name="testcases.CreateAccounttest">
+        <methods>
+          <include name="editView12"/>
+          <include name="createNewView11"/>
+          <include name="teardown"/>
+          <include name="mergeAccount13"/>
+          <include name="beforeMethod"/>
+          <include name="createAccount10"/>
+        </methods>
+      </class> <!-- testcases.CreateAccounttest -->
+    </classes>
+  </test> <!-- Sales force Automation(failed) -->
+</suite> <!-- Failed suite [Automation] -->

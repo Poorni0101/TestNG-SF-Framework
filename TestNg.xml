@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<suite name = "Automation">
+<listeners>
+<listener class-name="listeners.TestListener"></listener>
+</listeners>
+<test name = "Sales force Automation">
+<classes>
+ <class name ="testcases.Logintest"/>
+<class name ="testcases.UsermenuDropdowntest"/>
+<class name ="testcases.CreateAccounttest"/>
+<class name = "testcases.CreatOpportunitiestest"/>
+<class name ="testcases.Leadstest"/>
+<class name = "testcases.Contactstest"/>
+<class name = "testcases.RandomScenariostest"/>
+</classes>
+</test>
+</suite>

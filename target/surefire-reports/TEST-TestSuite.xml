@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="294.863" tests="36" errors="0" skipped="0" failures="7">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\mailm\.cache\selenium\chromedriver\win64\137.0.7151.55\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\mailm\eclipse-workspace\testNgFrameworkSF\target\test-classes;C:\Users\mailm\eclipse-workspace\testNgFrameworkSF\target\classes;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\mailm\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\mailm\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\mailm\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\mailm\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\mailm\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\mailm\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\mailm\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\mailm\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\mailm\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\mailm\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\mailm\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\mailm\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\mailm\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\mailm\.m2\repository\io\github\bonigarcia\webdrivermanager\6.1.0\webdrivermanager-6.1.0.jar;C:\Users\mailm\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\mailm\.m2\repository\com\google\code\gson\gson\2.13.0\gson-2.13.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java\3.5.0\docker-java-3.5.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-core\3.5.0\docker-java-core-3.5.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-api\3.5.0\docker-java-api-3.5.0.jar;C:\Users\mailm\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\mailm\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\mailm\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\mailm\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.0\docker-java-transport-httpclient5-3.5.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-transport\3.5.0\docker-java-transport-3.5.0.jar;C:\Users\mailm\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\mailm\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\mailm\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\mailm\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar;C:\Users\mailm\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\mailm\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\mailm\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\mailm\.m2\repository\com\aventstack\extentreports\3.0.0\extentreports-3.0.0.jar;C:\Users\mailm\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\mailm\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\mailm\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\mailm\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\mailm\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\mailm\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mailm\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\mailm\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\mailm\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\mailm\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\mailm\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\mailm\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\mailm\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\mailm\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\mailm\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\mailm\AppData\Local\Temp\surefire5638752273498321582\surefirebooter-20250530070149111_3.jar C:\Users\mailm\AppData\Local\Temp\surefire5638752273498321582 2025-05-30T07-01-49_021-jvmRun1 surefire-20250530070149111_1tmp surefire_0-20250530070149111_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\mailm\eclipse-workspace\testNgFrameworkSF\target\test-classes;C:\Users\mailm\eclipse-workspace\testNgFrameworkSF\target\classes;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\mailm\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\mailm\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\mailm\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\mailm\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\mailm\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\mailm\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\mailm\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\mailm\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\mailm\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\mailm\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\mailm\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\mailm\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\mailm\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\mailm\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\mailm\.m2\repository\io\github\bonigarcia\webdrivermanager\6.1.0\webdrivermanager-6.1.0.jar;C:\Users\mailm\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\mailm\.m2\repository\com\google\code\gson\gson\2.13.0\gson-2.13.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java\3.5.0\docker-java-3.5.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-core\3.5.0\docker-java-core-3.5.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-api\3.5.0\docker-java-api-3.5.0.jar;C:\Users\mailm\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\mailm\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\mailm\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\mailm\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.5.0\docker-java-transport-httpclient5-3.5.0.jar;C:\Users\mailm\.m2\repository\com\github\docker-java\docker-java-transport\3.5.0\docker-java-transport-3.5.0.jar;C:\Users\mailm\.m2\repository\net\java\dev\jna\jna\5.17.0\jna-5.17.0.jar;C:\Users\mailm\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\mailm\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.4.3\httpclient5-5.4.3.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.3.4\httpcore5-5.3.4.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.3.4\httpcore5-h2-5.3.4.jar;C:\Users\mailm\.m2\repository\net\java\dev\jna\jna-platform\5.13.0\jna-platform-5.13.0.jar;C:\Users\mailm\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\mailm\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\mailm\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\mailm\.m2\repository\com\aventstack\extentreports\3.0.0\extentreports-3.0.0.jar;C:\Users\mailm\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\mailm\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\mailm\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\mailm\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\mailm\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mailm\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\mailm\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\mailm\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\mailm\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\mailm\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\mailm\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\mailm\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\mailm\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\mailm\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\mailm\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\mailm\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mailm"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Users\mailm\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\mailm\eclipse-workspace\testNgFrameworkSF"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\mailm\AppData\Local\Temp\surefire5638752273498321582\surefirebooter-20250530070149111_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7"/>
+    <property name="user.name" value="mailm"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-23.0.2+7"/>
+    <property name="localRepository" value="C:\Users\mailm\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\mailm\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="C:\Users\mailm\eclipse-workspace\testNgFrameworkSF"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\mailm\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/mailm/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604/jre/bin/server;C:/Users/mailm/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.2.v20250131-0604/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Softwares\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\mailm\AppData\Local\Android\Sdk\build-tools;C:\Users\mailm\AppData\Local\Programs\Python\Launcher\;C:\Users\mailm\AppData\Local\Microsoft\WindowsApps;C:\Users\mailm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2\bin;;C:\Users\mailm\AppData\Roaming\npm;C:\Users\mailm\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="23.0.2+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="loginwithValidusernameandInvalidpassword1" classname="testcases.Logintest" time="0.813">
+    <system-out><![CDATA[*** Test Suite Sales force Automation started ***
+B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method loginwithValidusernameandInvalidpassword1...
+Directory already exists: C:\Users\mailm\eclipse-workspace\testNgFrameworkSF\ExtentReport
+2025-05-30 07:01:52 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with no password(TC1)       ****************
+2025-05-30 07:01:52 INFO  Log:32 - Email is entered
+2025-05-30 07:01:52 INFO  Log:32 - login button is clicked for test1
+2025-05-30 07:01:52 INFO  Log:25 - ***************             -E---N---D-Test case 1 is successful         ***************
+*** Executed loginwithValidusernameandInvalidpassword1 test successfully...
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 18390
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 18390.
+May 30, 2025 7:01:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="logwithvalidusernameandpassword2" classname="testcases.Logintest" time="3.002">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method logwithvalidusernameandpassword2...
+2025-05-30 07:01:54 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with valid password(TC2)       ****************
+2025-05-30 07:01:54 INFO  Log:32 - login button is clicked for test2
+2025-05-30 07:01:54 INFO  Log:25 - ***************             -E---N---D-Test case 2 is successful         ***************
+*** Executed logwithvalidusernameandpassword2 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 2447
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 2447.
+May 30, 2025 7:01:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="checkRememberMe3" classname="testcases.Logintest" time="4.261">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method checkRememberMe3...
+2025-05-30 07:01:58 INFO  Log:18 - ****************           -S-T-A-R-T-(TC3)       ****************
+2025-05-30 07:02:01 INFO  Log:32 - Logged in successful
+*** Executed checkRememberMe3 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 37256
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 37256.
+May 30, 2025 7:01:58 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="forgotpswd4a" classname="testcases.Logintest" time="0.692">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method forgotpswd4a...
+2025-05-30 07:02:04 INFO  Log:18 - ****************           -S-T-A-R-T-(TC4a)       ****************
+*** Executed forgotpswd4a test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 25052
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 25052.
+May 30, 2025 7:02:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="forgotpswd4b" classname="testcases.Logintest" time="0.335">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method forgotpswd4b...
+2025-05-30 07:02:06 INFO  Log:18 - ****************           -S-T-A-R-T-(TC4b)       ****************
+*** Executed forgotpswd4b test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 39580
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 39580.
+May 30, 2025 7:02:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="selectUsermenuDropdownTC5" classname="testcases.UsermenuDropdowntest" time="3.283">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method selectUsermenuDropdownTC5...
+2025-05-30 07:02:09 INFO  Log:18 - ****************           -S-T-A-R-T-(TC5)       ****************
+*** Executed selectUsermenuDropdownTC5 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 6065
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 6065.
+May 30, 2025 7:02:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="myProfileTC6" classname="testcases.UsermenuDropdowntest" time="6.753">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method myProfileTC6...
+2025-05-30 07:02:13 INFO  Log:18 - ****************           -S-T-A-R-T-(TC6)       ****************
+*** Executed myProfileTC6 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 8682
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 8682.
+May 30, 2025 7:02:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="mySettingsOption7" classname="testcases.UsermenuDropdowntest" time="9.128">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method mySettingsOption7...
+2025-05-30 07:02:22 INFO  Log:18 - ****************           -S-T-A-R-T-(TC7)       ****************
+*** Executed mySettingsOption7 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 4780
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 4780.
+May 30, 2025 7:02:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="developerConsole8" classname="testcases.UsermenuDropdowntest" time="3.524">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method developerConsole8...
+2025-05-30 07:02:32 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with no password(TC8)       ****************
+Parent Window - Salesforce - Developer Edition
+Child window - Developer Console
+*** Executed developerConsole8 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 4902
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 4902.
+May 30, 2025 7:02:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="logoutOption9" classname="testcases.UsermenuDropdowntest" time="4.734">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method logoutOption9...
+2025-05-30 07:02:37 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with no password(TC9)       ****************
+*** Executed logoutOption9 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 19721
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 19721.
+May 30, 2025 7:02:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="createAccount10" classname="testcases.CreateAccounttest" time="20.59">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@title=&apos;Accounts Tab&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@title='Accounts Tab']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at base.Basepage.waitforElement(Basepage.java:23)
+	at testcases.CreateAccounttest.createAccount10(CreateAccounttest.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Accounts Tab']"}
+  (Session info: chrome=137.0.7151.55)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-ASCRCERK', ip: '192.168.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: C:\Users\mailm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0cd0485267ca66d50bcf5bfbf1689d98
+*** Element info: {Using=xpath, value=//a[@title='Accounts Tab']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
+]]></failure>
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method createAccount10...
+2025-05-30 07:02:44 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with no password(TC10)       ****************
+*** Test execution createAccount10 failed...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 26111
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 26111.
+May 30, 2025 7:02:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="createNewView11" classname="testcases.CreateAccounttest" time="20.274">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@title=&apos;Accounts Tab&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@title='Accounts Tab']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at base.Basepage.waitforElement(Basepage.java:23)
+	at testcases.CreateAccounttest.createNewView11(CreateAccounttest.java:75)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Accounts Tab']"}
+  (Session info: chrome=137.0.7151.55)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-ASCRCERK', ip: '192.168.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: C:\Users\mailm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62695}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2389432895ad2a6ecf03fcb552c68bc8
+*** Element info: {Using=xpath, value=//a[@title='Accounts Tab']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
+]]></failure>
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method createNewView11...
+2025-05-30 07:03:06 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with no password(TC11)       ****************
+*** Test execution createNewView11 failed...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 20091
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 20091.
+May 30, 2025 7:03:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="editView12" classname="testcases.CreateAccounttest" time="20.964">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@title=&apos;Accounts Tab&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@title='Accounts Tab']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at base.Basepage.waitforElement(Basepage.java:23)
+	at testcases.CreateAccounttest.editView12(CreateAccounttest.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Accounts Tab']"}
+  (Session info: chrome=137.0.7151.55)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-ASCRCERK', ip: '192.168.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: C:\Users\mailm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62734}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 574a8294bf8d0a229c0a908731fc455e
+*** Element info: {Using=xpath, value=//a[@title='Accounts Tab']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
+]]></failure>
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method editView12...
+2025-05-30 07:03:28 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with no password(TC12)       ****************
+*** Test execution editView12 failed...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 29737
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 29737.
+May 30, 2025 7:03:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="mergeAccount13" classname="testcases.CreateAccounttest" time="21.255">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[@title=&apos;Accounts Tab&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[@title='Accounts Tab']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at base.Basepage.waitforElement(Basepage.java:23)
+	at testcases.CreateAccounttest.mergeAccount13(CreateAccounttest.java:122)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Accounts Tab']"}
+  (Session info: chrome=137.0.7151.55)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-ASCRCERK', ip: '192.168.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.55 (254bc711794d..., userDataDir: C:\Users\mailm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e2874bf9967bad43ca26e30aa1880d3
+*** Element info: {Using=xpath, value=//a[@title='Accounts Tab']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy8.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
+]]></failure>
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method mergeAccount13...
+2025-05-30 07:03:50 INFO  Log:18 - ****************           -S-T-A-R-T-Trying to login with no password(TC13)       ****************
+*** Test execution mergeAccount13 failed...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 34607
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 34607.
+May 30, 2025 7:03:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="opportunitiesDropdown15" classname="testcases.CreatOpportunitiestest" time="3.556">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method opportunitiesDropdown15...
+2025-05-30 07:04:13 INFO  Log:18 - ****************           -S-T-A-R-T-(TC15)       ****************
+*** Executed opportunitiesDropdown15 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 47669
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 47669.
+May 30, 2025 7:04:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="createNewOpty16" classname="testcases.CreatOpportunitiestest" time="6.651">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method createNewOpty16...
+2025-05-30 07:04:18 INFO  Log:18 - ****************           -S-T-A-R-T-(TC16)       ****************
+*** Executed createNewOpty16 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 3737
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 3737.
+May 30, 2025 7:04:18 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="oppoPipeLineReport17" classname="testcases.CreatOpportunitiestest" time="4.184">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method oppoPipeLineReport17...
+2025-05-30 07:04:26 INFO  Log:18 - ****************           -S-T-A-R-T-(TC17)       ****************
+*** Executed oppoPipeLineReport17 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 21789
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 21789.
+May 30, 2025 7:04:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="stuckOpportunitiesReport18" classname="testcases.CreatOpportunitiestest" time="4.584">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method stuckOpportunitiesReport18...
+2025-05-30 07:04:32 INFO  Log:18 - ****************           -S-T-A-R-T-(TC18)       ****************
+*** Executed stuckOpportunitiesReport18 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 21601
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 21601.
+May 30, 2025 7:04:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="quaterlySummaryReport19" classname="testcases.CreatOpportunitiestest" time="3.486">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method quaterlySummaryReport19...
+2025-05-30 07:04:38 INFO  Log:18 - ****************           -S-T-A-R-T-(TC19)       ****************
+*** Executed quaterlySummaryReport19 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 1281
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 1281.
+May 30, 2025 7:04:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="leadsTab20" classname="testcases.Leadstest" time="2.753">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method leadsTab20...
+2025-05-30 07:04:43 INFO  Log:18 - ****************           -S-T-A-R-T-(TC20)       ****************
+*** Executed leadsTab20 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 45844
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 45844.
+May 30, 2025 7:04:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="leadsSelectView21" classname="testcases.Leadstest" time="3.474">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method leadsSelectView21...
+2025-05-30 07:04:47 INFO  Log:18 - ****************           -S-T-A-R-T-(TC21)       ****************
+*** Executed leadsSelectView21 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 31562
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 31562.
+May 30, 2025 7:04:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="defaultView22" classname="testcases.Leadstest" time="6.191">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method defaultView22...
+2025-05-30 07:04:52 INFO  Log:18 - ****************           -S-T-A-R-T-(TC22)       ****************
+*** Executed defaultView22 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 14098
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 14098.
+May 30, 2025 7:04:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="todaysLeads23" classname="testcases.Leadstest" time="4.555">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method todaysLeads23...
+2025-05-30 07:05:00 INFO  Log:18 - ****************           -S-T-A-R-T-(TC23)       ****************
+*** Executed todaysLeads23 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 9696
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 9696.
+May 30, 2025 7:05:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="checkNewButton24" classname="testcases.Leadstest" time="5.332">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method checkNewButton24...
+2025-05-30 07:05:06 INFO  Log:18 - ****************           -S-T-A-R-T-(TC24)       ****************
+*** Executed checkNewButton24 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 5775
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 5775.
+May 30, 2025 7:05:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="createNewContact25" classname="testcases.Contactstest" time="6.308">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method createNewContact25...
+2025-05-30 07:05:13 INFO  Log:18 - ****************           -S-T-A-R-T-(TC25)       ****************
+*** Executed createNewContact25 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 16490
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 16490.
+May 30, 2025 7:05:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="createNewViewContactPage26" classname="testcases.Contactstest" time="6.036">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method createNewViewContactPage26...
+2025-05-30 07:05:21 INFO  Log:18 - ****************           -S-T-A-R-T-(TC26)       ****************
+*** Executed createNewViewContactPage26 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 21366
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 21366.
+May 30, 2025 7:05:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="createdContactIsInTheContactpage27" classname="testcases.Contactstest" time="6.237">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method createdContactIsInTheContactpage27...
+2025-05-30 07:05:29 INFO  Log:18 - ****************           -S-T-A-R-T-(TC27)       ****************
+*** Executed createdContactIsInTheContactpage27 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 49005
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 49005.
+May 30, 2025 7:05:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="checkMyContacts28" classname="testcases.Contactstest" time="4.049">
+    <failure message="Expected contact name &apos;Indian&apos; not found in My Contacts. expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected contact name 'Indian' not found in My Contacts. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testcases.Contactstest.checkMyContacts28(Contactstest.java:123)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method checkMyContacts28...
+2025-05-30 07:05:37 INFO  Log:18 - ****************           -S-T-A-R-T-(TC28)       ****************
+false*** Test execution checkMyContacts28 failed...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 9960
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 9960.
+May 30, 2025 7:05:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="viewAContact29" classname="testcases.Contactstest" time="4.32">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method viewAContact29...
+2025-05-30 07:05:43 INFO  Log:18 - ****************           -S-T-A-R-T-(TC29)       ****************
+*** Executed viewAContact29 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 20551
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 20551.
+May 30, 2025 7:05:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="viewAContact30" classname="testcases.Contactstest" time="4.307">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method viewAContact30...
+2025-05-30 07:05:49 INFO  Log:18 - ****************           -S-T-A-R-T-(TC30)       ****************
+*** Executed viewAContact30 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 41665
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 41665.
+May 30, 2025 7:05:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="cancelButtonInCreateNewView31" classname="testcases.Contactstest" time="4.571">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method cancelButtonInCreateNewView31...
+2025-05-30 07:05:55 INFO  Log:18 - ****************           -S-T-A-R-T-(TC31)       ****************
+*** Executed cancelButtonInCreateNewView31 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 23627
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 23627.
+May 30, 2025 7:05:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="saveAndNewButton32" classname="testcases.Contactstest" time="7.397">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method saveAndNewButton32...
+2025-05-30 07:06:02 INFO  Log:18 - ****************           -S-T-A-R-T-(TC32)       ****************
+Child window - Search ~ Salesforce - Developer Edition
+*** Executed saveAndNewButton32 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 42419
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 42419.
+May 30, 2025 7:06:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="blockingAnEventInTheCalender36" classname="testcases.RandomScenariostest" time="8.373">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method blockingAnEventInTheCalender36...
+2025-05-30 07:06:11 INFO  Log:18 - ****************           -S-T-A-R-T-(T36)       ****************
+Calendar for Poornitha XYZ - Day View is opened
+Child window - ComboBox
+*** Executed blockingAnEventInTheCalender36 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 12201
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 12201.
+May 30, 2025 7:06:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyEditedLastNames34" classname="testcases.RandomScenariostest" time="7.487">
+    <failure message="did not expect [Poornitha XYZ ] but found [Poornitha XYZ ]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: did not expect [Poornitha XYZ ] but found [Poornitha XYZ ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1594)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2217)
+	at org.testng.Assert.assertNotEquals(Assert.java:2239)
+	at testcases.RandomScenariostest.verifyEditedLastNames34(RandomScenariostest.java:97)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method verifyEditedLastNames34...
+2025-05-30 07:06:21 INFO  Log:18 - ****************           -S-T-A-R-T-(T34)       ****************
+Cliked my profile
+BeforePoornitha XYZ 
+AfterPoornitha XYZ 
+*** Test execution verifyEditedLastNames34 failed...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 8215
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 8215.
+May 30, 2025 7:06:20 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyTabCustomization35" classname="testcases.RandomScenariostest" time="7.185">
+    <failure message="did not expect [8] but found [8]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: did not expect [8] but found [8]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failEquals(Assert.java:1594)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+	at org.testng.Assert.assertNotEquals(Assert.java:2217)
+	at org.testng.Assert.assertNotEquals(Assert.java:2239)
+	at testcases.RandomScenariostest.verifyTabCustomization35(RandomScenariostest.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method verifyTabCustomization35...
+2025-05-30 07:06:30 INFO  Log:18 - ****************           -S-T-A-R-T-(T35)       ****************
+Before8
+After 8
+*** Test execution verifyTabCustomization35 failed...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 41292
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 41292.
+May 30, 2025 7:06:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyFirstNameLastName33" classname="testcases.RandomScenariostest" time="4.801">
+    <system-out><![CDATA[B  chrome
+Chrome launched
+url  https://login.salesforce.com/
+*** Running test method verifyFirstNameLastName33...
+2025-05-30 07:06:38 INFO  Log:18 - ****************           -S-T-A-R-T-(T33)       ****************
+Poornitha Abcd 
+i clicked my profile option for you :-)
+*** Executed verifyFirstNameLastName33 test successfully...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 137.0.7151.55 (254bc711794d7ad269495f3d419a209935b78cad-refs/branch-heads/7151@{#1757}) on port 31360
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 31360.
+May 30, 2025 7:06:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document root element "log4j:configuration", must match DOCTYPE root "null".
+log4j:WARN Continuable parsing error 3 and column 83
+log4j:WARN Document is invalid: no grammar found.
+]]></system-err>
+  </testcase>
+</testsuite>
