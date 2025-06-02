@@ -115,8 +115,14 @@ public class Contactstest extends Basetest{
 		loginpage.clickonLoginButton();
 		basepage.waitforElement(contactspage.contactsTabElement(), 20);
 		basepage.click(contactspage.contactsTabElement());
-		basepage.selectByVisibleTex(contactspage.verifyNameDropdownElement(), "My Contacts");
 		
+		basepage.selectByVisibleTex(contactspage.verifyNameDropdownElement(), "My Contacts");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		boolean actual = contactspage.checkIfThereAreValues();
 		//boolean expected = true;
 		System.out.print(actual);

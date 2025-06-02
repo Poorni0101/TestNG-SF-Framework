@@ -38,6 +38,7 @@ Propertiesfile property = new Propertiesfile();
 		String url = property.getProperty("url");
 		System.out.println("url  "+url);
 		driver.get(url);
+		driver.manage().window().maximize();
 		return driver;
 	}
 	public void closebrowser() {

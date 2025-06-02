@@ -41,6 +41,7 @@ public class Leadstest extends Basetest{
 		usermenuDropdownpage  = new UsermenuDropdownpage(driver);
 		//screenshot= new Screenshot();
 		DOMConfigurator.configure("log4j.xml");
+		
 	}
 
 	@Test(priority=1)
@@ -49,6 +50,7 @@ public class Leadstest extends Basetest{
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
 		loginpage.enterintoPassword("Poornitha123");
 		loginpage.clickonLoginButton();
+		
 		basepage.waitforElement(leadspage.getLeadTabelement(), 20);
 		leadspage.clickLeadsTab();
 		String expected = "Leads";
@@ -124,6 +126,7 @@ public class Leadstest extends Basetest{
 		leadspage.typeLastName();
 		leadspage.typeCompany();
 		leadspage.clickSaveButton();
+		basepage.waitforElement(leadspage.checkNameElement(), 20);
 		String actualResult = leadspage.getCheckName();
 		String expectedResult24 = "ABCD";
 		Assert.assertEquals(expectedResult24, actualResult);

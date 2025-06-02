@@ -1,7 +1,10 @@
 package pages;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import base.Basepage;
 
 public class RandomScenariospage extends Basepage {
-		
+	Basepage basepage;
 		
 	 public RandomScenariospage(WebDriver driver) {
 				super(driver);
@@ -188,15 +191,86 @@ WebElement endDateTime;
 public String getEndDateTime() {
 	return endDateTime.getText();
 }
+@FindBy(xpath = "//a[contains(text(), '4:00 PM')]")
+WebElement fourPMlink;
 
+public void clickFourPMLink() {
+	fourPMlink.click();
+}
+@FindBy(xpath = "//input[@name='EndDateTime_time' and @value='5:00 PM']")
+WebElement endTimeBox;
+public void clickEndTimeBox() {
+	endTimeBox.click();
+}
 
+@FindBy(id = "timePickerItem_38")
+WebElement timePicker7PM;
 
+public void clickTimePicker7PM() {
+	timePicker7PM.click();
+}
 
+@FindBy(id = "IsRecurrence")
+WebElement checkboxRecurrence;
+public void clickCheckboxRecurrence() {
+	checkboxRecurrence.click();
+}
 
+@FindBy(xpath = "//label[text()='Weekly'] ")
+WebElement weeklyRadioButton;
+public void clickWeeklyRadioButton() {
+	weeklyRadioButton.click();
+}
+@FindBy(id ="wi")
+WebElement recursEveryTextBox;
 
+public String recursEveryTextBoxValue() {
+	return  recursEveryTextBox.getAttribute("value");
+}
+@FindBy(id = "RecurrenceStartDateTime")
+WebElement recursEveryStartDate;
 
+public String recursEveryStartDateValue() {
+	return  recursEveryStartDate.getAttribute("value");
+}
 
+public DateTimeFormatter toFormatTheDate() {
+	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");
+	return formatter;
+}
 
+@FindBy(id ="RecurrenceEndDateOnly")
+WebElement recurrenceEndDateOnly;
 
+public void enterrecurrenceEndDateOnly(String endDateValue) {
+	recurrenceEndDateOnly.sendKeys(endDateValue);
+}
+@FindBy (xpath = "//div[contains(@class, 'hourRowLabel')]//a[normalize-space(text())='4:00 PM']")
+WebElement timeSlot;
+
+public List<WebElement> recurrenceItemsList() {
+	List<WebElement> recurrenceItems = timeSlot.findElements(By.xpath("//div[contains(@class, 'hourRowLabel')]//a[normalize-space(text())='4:00 PM']"));
+	return recurrenceItems;
+			
+	
+}
+
+@FindBy(xpath = "//img[@title='Month View']")
+WebElement monthViewIcon;
+public void clickMonthViewIcon() {
+	monthViewIcon.click();
+}
+@FindBy(xpath = "//h1[contains(text(), 'Poornitha') and contains(text(), 'Month View')]")
+WebElement monthViewPageTitle;
+public String getMonthViewPageTitle() {
+	return  monthViewPageTitle.getText();
+}
+
+public List<WebElement> todayEvent(String partialStart) {
+	basepage.explicitwaitlocator(By.xpath("//div[contains(@onmouseover, '"+partialStart+"') and .//a[normalize-space(text())='Other']]"),20);
+	WebElement todayEvent = driver.findElement(By.xpath("//div[contains(@onmouseover, '"+partialStart+"') and .//a[normalize-space(text())='Other']]"));
+	List<WebElement> events = todayEvent.findElements(By.xpath(".//a[contains(text(), 'Other')]"));
+	return events;
+}
 
 }

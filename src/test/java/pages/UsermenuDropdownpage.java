@@ -5,6 +5,7 @@ import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -138,11 +139,14 @@ public void clickPost() {
 @FindBy(tagName = "iframe" )
 WebElement postIframe;
 
-@FindBy(xpath = "//body[text()='Share an update, @mention someone...']")
+@FindBy(xpath = "//body[@contenteditable='true']")
 WebElement enterPost;
 
 public void enterInfoToPost() {
 	enterPost.sendKeys("Entering through automation TestNG framework");
+}
+public void enterPostClick() {
+	enterPost.click();
 }
 
 @FindBy(id="publishersharebutton")
@@ -335,5 +339,103 @@ public void clickMysettings() {
 		public WebElement postiFrameElement() {
 			return postiFrame;
 		}
+@FindBy(id= "publishersharebutton")
+WebElement sharebutton;
+
+public void clickShareButton() {
+	sharebutton.click();
+}
+@FindBy(xpath = "//p[text()='Entering through automation TestNG framework']" )
+WebElement posted;
+
+public WebElement postedElement() {
+	return posted;	
+}
+public String getPostedText() {
+	return posted.getText();
+}
+
+@FindBy(xpath = "//span[text()='File']")
+WebElement fileOption;
+
+public void clickFileOption() {
+	fileOption.click();
+}
+@FindBy(id = "chatterUploadFileAction")
+WebElement fileUpload;
+
+public void clickfileUpload() {
+	fileUpload.click();
+}
+@FindBy(id = "chatterFile")
+WebElement browseButton;
+String filePath = "C:\\Users\\mailm\\Desktop\\flower.png";
+	
+@FindBy(id = "publishersharebutton")
+WebElement fileShareButton;
+public void enterFilePathAndClickShareButton() {
+	browseButton.sendKeys(filePath);
+	System.out.println("About to chick share button");
+	fileShareButton.click();
+}
+@FindBy(xpath = "//span[@class='contentTitleLink' and text()='flower']")
+WebElement uploadedFile;
+public WebElement uploadedFileelement() {
+	return uploadedFile;
+}
+public String getUploadedFileName() {
+	return uploadedFile.getText();
+}
+@FindBy(xpath = "//span[contains(@class,'profileImage')]")
+WebElement profilePic;
+
+public WebElement moveToProifilePic() {
+
+	return profilePic;
+}
+@FindBy(id = "uploadLink")
+WebElement addPhotoLink;
+public void clickAddPhotoLink() {
+	addPhotoLink.click();
+}
+@FindBy(id ="uploadPhotoContentId" )
+WebElement iframePhotoUpload;
+public WebElement iframePhotoUploadElement() {
+	return iframePhotoUpload;
+}
+@FindBy(id = "j_id0:uploadFileForm:uploadInputFile")
+WebElement photoBrowseButton;
+String filePathPhoto = "C:\\Users\\mailm\\Desktop\\flower.png";
+public void sendPhotoFilePath() {
+	photoBrowseButton.sendKeys(filePathPhoto);
+}	
+	
+@FindBy(id = "j_id0:uploadFileForm:uploadBtn")
+WebElement photoSaveButton;
+
+public WebElement photoSaveButtonElement() {
+	return photoSaveButton;
+}
+@FindBy(xpath = "//div[@class='imgCrop_handle imgCrop_handleSE']")
+WebElement bottomRightHandleCrop;
+public WebElement bottomRightHandleCropElement() {
+	return bottomRightHandleCrop;
+}
+@FindBy(id = "j_id0:j_id7:save")
+WebElement finalSaveButton;
+public WebElement finalSaveButtonElement() {
+	return finalSaveButton;
+}
+@FindBy(id = "deletePhoto")
+WebElement deletePicOption;
+public WebElement deletePicOptionelement() {
+	return deletePicOption;
+}
+
+
+
+
+
+
 }
 

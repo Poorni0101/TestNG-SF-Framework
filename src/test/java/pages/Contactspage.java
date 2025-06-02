@@ -104,10 +104,19 @@ public class Contactspage extends Basepage {
 
 	@FindBy(xpath = "//table[@class=\"list\"]//tr/td/preceding-sibling::th[a[text()=\"Indian\"]]")
 	List<WebElement> columnName;
-
+	
+	public List<WebElement> columnNameListElement(){
+		return columnName;
+	}
 	public boolean checkIfThereAreValues() {
-		return !columnName.isEmpty();
-
+		int listsize = columnName.size();
+		System.out.println(listsize);
+		//return !columnName.isEmpty();
+		if(listsize>0) 
+			return true;
+		else
+			return false;
+		
 	}
 
 	@FindBy(xpath = "(//tr[contains(@class,'dataRow')]//th/a)[1]" )

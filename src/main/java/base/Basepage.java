@@ -2,9 +2,11 @@ package base;
 
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+
 import java.util.Date;
 import java.util.Set;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -13,7 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Basepage {
-static WebDriver driver;
+public static WebDriver driver;
 public Basepage(WebDriver driver) {
 	this.driver=driver;
  PageFactory.initElements(driver,this);
@@ -45,6 +47,7 @@ public String getText(WebElement element) {
 	waitForElementToBeVisible(element);
 	return element.getText();
 }
+		
 
 public void selectByVisibleTex(WebElement element, String text) {
 	Select dropdown = new Select(element);
@@ -72,9 +75,17 @@ public void switchToWindow() {
 	}
 }
 
+public void explicitwaitlocator(By locator, int time) {
+	WebDriverWait wait = new WebDriverWait(driver, time);
+	wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+}
 
 public String generateTimeStamp() {
 	String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 	return timestamp;
+}
+
+public void getWindowHandleCount() {
+	
 }
 }

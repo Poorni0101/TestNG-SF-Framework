@@ -1,8 +1,11 @@
 package testcases;
 
+import static base.Basepage.driver;
+
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -70,6 +73,8 @@ public void myProfileTC6() {
 	usermenuDropdownpage.clickUsermenuDropdown();
 	
 	usermenuDropdownpage.clickMyProfile();
+	
+	//changing last name
 	usermenuDropdownpage.clickPencilIcon();
 	driver.switchTo().frame(usermenuDropdownpage.getFrameElement());
 	usermenuDropdownpage.clickAboutTab();
@@ -79,17 +84,90 @@ public void myProfileTC6() {
 	
 	//switching back to default content
 	driver.switchTo().defaultContent();
-	//basepage.waitforElement(usermenuDropdownpage.getUsernameDropdownElement(), 20);
-	//usermenuDropdownpage.clickUsermenuDropdown();
 	
-	//usermenuDropdownpage.clickMyProfile();
-	//basepage.waitForElementToBeClickable(usermenuDropdownpage.postButtonElement());
-	//basepage.click(usermenuDropdownpage.postButtonElement());
+	//click post option
+	
 	driver.navigate().refresh();
-	//driver.switchTo().frame(usermenuDropdownpage.postiFrameElement());
-	//usermenuDropdownpage.enterInfoToPost();
+		basepage.waitForElementToBeClickable(usermenuDropdownpage.postButtonElement());
+    basepage.click(usermenuDropdownpage.postButtonElement());
+	
+    basepage.waitforElement(usermenuDropdownpage.postiFrameElement(), 20);
+	driver.switchTo().frame(usermenuDropdownpage.postiFrameElement());
+	usermenuDropdownpage.enterPostClick();
+	usermenuDropdownpage.enterInfoToPost();
+	driver.switchTo().defaultContent();
+	usermenuDropdownpage.clickShareButton();
+	//validate post
+	basepage.waitforElement(usermenuDropdownpage.postedElement(), 10);
+	String actualPost = usermenuDropdownpage.getPostedText();
+	String expectedPost = "Entering through automation TestNG framework";
+	System.out.println("ACtual ="+actualPost);
+	Assert.assertEquals(expectedPost, actualPost);
+	System.out.println("Expected ="+expectedPost);
+	
+	//click File option
+	usermenuDropdownpage.clickFileOption();
+	usermenuDropdownpage.clickfileUpload();
+	System.out.println("file uploaded");
+	usermenuDropdownpage.enterFilePathAndClickShareButton();
+	System.out.println("file uploaded shared");
+	//validate file upload
+	//driver.navigate().refresh();
+	basepage.waitforElement(usermenuDropdownpage.uploadedFileelement(), 20);
+	String actualFilename = usermenuDropdownpage.getUploadedFileName();
+	System.out.println(actualFilename +"This file has been uploaded");
+	String expectedfileName = "flower";
+	Assert.assertEquals(expectedfileName, actualFilename);
+	
+	//photo upload
+	driver.navigate().refresh();
+	Actions action = new Actions(driver);
+	action.moveToElement(usermenuDropdownpage.moveToProifilePic()).build().perform();
+	usermenuDropdownpage.clickAddPhotoLink();
+	basepage.waitForElementToBeClickable(usermenuDropdownpage.iframePhotoUploadElement());
+	driver.switchTo().frame(usermenuDropdownpage.iframePhotoUploadElement());
+	usermenuDropdownpage.sendPhotoFilePath();
+	basepage.waitforElement(usermenuDropdownpage.photoSaveButtonElement(), 20);
+	basepage.click(usermenuDropdownpage.photoSaveButtonElement());
+	basepage.waitforElement(usermenuDropdownpage.bottomRightHandleCropElement(), 30);
+	action.clickAndHold(usermenuDropdownpage.bottomRightHandleCropElement()).moveByOffset(-50, -50).release().build().perform();
+	basepage.waitforElement(usermenuDropdownpage.finalSaveButtonElement(), 30);
+	basepage.click(usermenuDropdownpage.finalSaveButtonElement());
+	
+	//validate	
+	driver.switchTo().defaultContent();
+	String actualOption = basepage.getText(usermenuDropdownpage.deletePicOptionelement());
+	String expectedOption =  "Delete";
+	Assert.assertEquals(expectedOption, actualOption);
 }
-
+@Test(enabled = false)
+public void addProfilePic() {
+	Log.startTestCase("(TC6)");
+	loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
+	loginpage.enterintoPassword("Poornitha123");
+	loginpage.clickonLoginButton();
+	//basepage.waitforElement(loginpage.getUsernameElement(), 20);
+	basepage.waitforElement(usermenuDropdownpage.getUsernameDropdownElement(), 20);
+	usermenuDropdownpage.clickUsermenuDropdown();
+	
+	usermenuDropdownpage.clickMyProfile();
+	Actions action = new Actions(driver);
+	action.moveToElement(usermenuDropdownpage.moveToProifilePic()).build().perform();
+	usermenuDropdownpage.clickAddPhotoLink();
+	basepage.waitforElement(usermenuDropdownpage.iframePhotoUploadElement(), 20);
+	driver.switchTo().frame(usermenuDropdownpage.iframePhotoUploadElement());
+	usermenuDropdownpage.sendPhotoFilePath();
+	basepage.waitforElement(usermenuDropdownpage.photoSaveButtonElement(), 20);
+	basepage.click(usermenuDropdownpage.photoSaveButtonElement());
+	basepage.waitforElement(usermenuDropdownpage.bottomRightHandleCropElement(), 30);
+	action.clickAndHold(usermenuDropdownpage.bottomRightHandleCropElement()).moveByOffset(-50, -50).release().build().perform();
+	basepage.waitforElement(usermenuDropdownpage.finalSaveButtonElement(), 30);
+	basepage.click(usermenuDropdownpage.finalSaveButtonElement());
+	driver.switchTo().defaultContent();
+	String actualOption = basepage.getText(usermenuDropdownpage.deletePicOptionelement());
+	String expectedOption =  "Delete";
+	Assert.assertEquals(expectedOption, actualOption);
+}
 @Test (priority=2)
 public void mySettingsOption7() {
 	Log.startTestCase("(TC7)");
@@ -161,7 +239,7 @@ public void developerConsole8() {
 	loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
 	loginpage.enterintoPassword("Poornitha123");
 	loginpage.clickonLoginButton();
-	//basepage.waitforElement(loginpage.getUsernameElement(), 20);
+	basepage.waitforElement(loginpage.getUsernameElement(), 20);
 	basepage.waitforElement(usermenuDropdownpage.getUsernameDropdownElement(), 20);
 	
 	usermenuDropdownpage.clickUsermenuDropdown();

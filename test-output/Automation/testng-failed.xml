@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Sales force Automation(failed)">
     <classes>
+      <class name="testcases.CreateAccounttest">
+        <methods>
+          <include name="teardown"/>
+          <include name="mergeAccount13"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.CreateAccounttest -->
       <class name="testcases.Leadstest">
         <methods>
           <include name="checkNewButton24"/>
@@ -20,14 +27,13 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- testcases.Contactstest -->
-      <class name="testcases.RandomScenariostest">
+      <class name="testcases.UsermenuDropdowntest">
         <methods>
-          <include name="verifyTabCustomization35"/>
           <include name="teardown"/>
+          <include name="developerConsole8"/>
           <include name="beforeMethod"/>
-          <include name="verifyEditedLastNames34"/>
         </methods>
-      </class> <!-- testcases.RandomScenariostest -->
+      </class> <!-- testcases.UsermenuDropdowntest -->
     </classes>
   </test> <!-- Sales force Automation(failed) -->
 </suite> <!-- Failed suite [Automation] -->

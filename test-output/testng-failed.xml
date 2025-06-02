@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Automation]">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Sales force Automation(failed)">
     <classes>
+      <class name="testcases.CreateAccounttest">
+        <methods>
+          <include name="teardown"/>
+          <include name="mergeAccount13"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.CreateAccounttest -->
+      <class name="testcases.Leadstest">
+        <methods>
+          <include name="checkNewButton24"/>
+          <include name="beforeMethod"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.Leadstest -->
       <class name="testcases.Contactstest">
         <methods>
-          <include name="cancelButtonInCreateNewView31"/>
-          <include name="viewAContact30"/>
           <include name="beforeMethod"/>
           <include name="checkMyContacts28"/>
-          <include name="createNewViewContactPage26"/>
           <include name="teardown"/>
-          <include name="createdContactIsInTheContactpage27"/>
-          <include name="viewAContact29"/>
-          <include name="saveAndNewButton32"/>
         </methods>
       </class> <!-- testcases.Contactstest -->
+      <class name="testcases.UsermenuDropdowntest">
+        <methods>
+          <include name="teardown"/>
+          <include name="developerConsole8"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.UsermenuDropdowntest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Sales force Automation(failed) -->
+</suite> <!-- Failed suite [Automation] -->

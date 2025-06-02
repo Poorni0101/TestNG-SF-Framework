@@ -118,7 +118,9 @@ public void clickSaveButton() {
 }
 @FindBy(xpath = "//h2[@class='pageDescription']") //changed from id = lea2_ilecell
 WebElement checkName;
-
+public WebElement checkNameElement() {
+	return checkName;
+}
 public String getCheckName() {
 	return checkName.getText();
 }

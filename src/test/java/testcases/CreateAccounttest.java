@@ -107,7 +107,7 @@ public void editView12() {
 	basepage.waitforElement(createAccountpage.lastActivityTitle(), 20);
 	String actualLastActivity = createAccountpage.getLastActivityTitle();
 	String expectedLastActivity = "Last Activity";
-
+	System.out.println(actualLastActivity);
 	String actualViewDropDown = createAccountpage.selectViewDropdown();
 	Assert.assertEquals(actualLastActivity, expectedLastActivity); 
 	Assert.assertEquals (actualViewDropDown,expectedViewDropdown);
@@ -131,6 +131,7 @@ String accountName1 = createAccountpage.verifyAccountName1();
 String accountName2 = createAccountpage.verifyAccountName2();
 createAccountpage.clickNextButton();
 String actual = createAccountpage.verifyStep2Merging();
+System.out.println(actual);
 String expected = "Step 2. Select the values to retain";
 //verify the account name selected is same from step2 page
 String name1a = createAccountpage.getAccountname1a();
@@ -146,7 +147,7 @@ String expectedresult = "Accounts";
 Assert.assertEquals(actualresult, expectedresult);
 }
 
-@Test(enabled = false)//not switching
+@Test (priority = 5)
 public void createAccountReport14() {
 	Log.startTestCase("Trying to login with no password(TC14)");
 	loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -164,9 +165,22 @@ public void createAccountReport14() {
 	createAccountpage.clickTodayButton2();
 	createAccountpage.clickSaveButton3();
 	
-	basepage.switchToWindow();
+//	basepage.switchToWindow();
 	String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 	createAccountpage.reportName(timestamp);
+	createAccountpage.clickReportUniqueName();
+	
+	try {
+		Thread.sleep(3000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	basepage.waitForElementToBeClickable(createAccountpage.saveandrunButtonElement());
+	basepage.waitForElementToBeVisible(createAccountpage.saveandrunButtonElement());
+	
+	basepage.click(createAccountpage.saveandrunButtonElement());
 }
 
 

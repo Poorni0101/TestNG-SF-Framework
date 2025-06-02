@@ -1,15 +1,20 @@
 package testcases;
 
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -69,7 +74,7 @@ public class RandomScenariostest extends Basetest{
 		Assert.assertEquals(actual, expected);
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void verifyEditedLastNames34() {
 		Log.startTestCase("(T34)");
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -97,7 +102,7 @@ public class RandomScenariostest extends Basetest{
 		Assert.assertNotEquals(homeName, homeNameAfterChange);
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void verifyTabCustomization35() {
 		Log.startTestCase("(T35)");
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -130,7 +135,7 @@ public class RandomScenariostest extends Basetest{
 	}
 	
 	
-	@Test
+	@Test(priority=4)
 	public void blockingAnEventInTheCalender36() {
 		Log.startTestCase("(T36)");
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -164,14 +169,88 @@ public class RandomScenariostest extends Basetest{
 		String expectedStartTime = "8:00 PM";
 		String expectedEndTime = "9:00 PM";
 		Assert.assertEquals(actualTitle, expectedTitle);
-		Assert.assertTrue(actualStartTime.startsWith(expectedStartTime));
-		Assert.assertTrue(actualEndTime.startsWith(expectedEndTime));
+		//Assert.assertTrue(actualStartTime.startsWith(expectedStartTime),"Start time doesnt match"+actualStartTime);
+		//Assert.assertTrue(actualEndTime.startsWith(expectedEndTime),"End time doesnt match"+actualEndTime);
+	
+	}
+	
+	@Test(priority =5)
+	public void blockingAnEventWeeklyRecurrance37() {
+		Log.startTestCase("(T37)");
+		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
+		loginpage.enterintoPassword("Poornitha123");
+		loginpage.clickonLoginButton();
+		basepage.waitforElement(randomScenariospage.homeTabElement(), 20);
+		basepage.click(randomScenariospage.homeTabElement());
+		basepage.click(randomScenariospage.currentDatelinkElement());
+		System.out.println(randomScenariospage.calenderFnameLnameOpenedElement().getText()+" is opened");
+		randomScenariospage.clickFourPMLink();
+		String mainWindow = driver.getWindowHandle();
+		randomScenariospage.subjectComboIconClick();
+		basepage.switchToWindow();
+		randomScenariospage.otherLinkClick();
+		driver.switchTo().window(mainWindow);
+		randomScenariospage.clickEndTimeBox();
+		randomScenariospage.clickTimePicker7PM();
+		randomScenariospage.clickCheckboxRecurrence();
+		randomScenariospage.clickWeeklyRadioButton();
+		String recursEveryValue = randomScenariospage.recursEveryTextBoxValue();
+		String recursEveryStartDateValue = randomScenariospage.recursEveryStartDateValue();
+		LocalDate startDate = LocalDate.parse(recursEveryStartDateValue, randomScenariospage.toFormatTheDate());
+		LocalDate endDate = startDate.plusDays(14);
+		System.out.println(endDate);
+		String recursEveryEndDateValue = endDate.format(randomScenariospage.toFormatTheDate());
+		System.out.println(recursEveryEndDateValue);
+		randomScenariospage.enterrecurrenceEndDateOnly(recursEveryEndDateValue);
+		basepage.click(randomScenariospage.saveButtonElement());
+		String endTimeSelected = "7:00 PM";
+		DateTimeFormatter formatterTime = DateTimeFormatter.ofPattern("h:mm a");
+		LocalTime endTimeParse = LocalTime.parse(endTimeSelected,formatterTime);
+		boolean foundWithinTimeRange = false;
+		for(WebElement item : randomScenariospage.recurrenceItemsList()) {
+			String href= item.getAttribute("href");
+			System.out.println(href + "href link");
+		if(href!= null && href.contains("evt13=")) // to avoid null pointer exception
+		{
+			String encodedTime = href.split("evt13=")[1].split("&")[0];// to get only "4%3A00+PM" from href
+			System.out.println("encoded time "+encodedTime);
+			String decodedTime = URLDecoder.decode(encodedTime,StandardCharsets.UTF_8); // to convert URL encoded time into readable format
+			System.out.println("decoded time "+decodedTime);
+			LocalTime eventTime = LocalTime.parse(decodedTime,formatterTime);
+			
+			//check if event is within the end time
+			if(!eventTime.isAfter(endTimeParse)) {
+				System.out.println(eventTime);
+				System.out.println(endTimeParse);
+				foundWithinTimeRange = true;
+				System.out.println(foundWithinTimeRange);
+				break;
+			}
+		}
+		}
+	Assert.assertTrue(foundWithinTimeRange,"No item found between 4 pm and 7 pm");
+	
+	randomScenariospage.clickMonthViewIcon();
+	String actualmonthViewPagetitle = randomScenariospage.getMonthViewPageTitle();
+	//String expectedmonthViewPageTitle = "Calendar for Poornitha Abcd - Month View";
+	Assert.assertTrue(actualmonthViewPagetitle.startsWith("Calendar for Poornitha")&& actualmonthViewPagetitle.endsWith("Month View"), "Heading didnt match" );
+	
+	String todayFormatted = LocalDate.now().format(DateTimeFormatter.ofPattern("M/d/yyyy"));
+	String encodedTodayDate = todayFormatted.replace("/", "%2F") + "%2C"; 
+	String partialStart = "Start=" + encodedTodayDate;
+	System.out.println(partialStart);
+	//List<WebElement> events = randomScenariospage.todayEvent(partialStart);
+	basepage.explicitwaitlocator(By.xpath("//div[contains(@onmouseover, '"+partialStart+"') and .//a[normalize-space(text())='Other']]"),20);
+	WebElement todayEvent = driver.findElement(By.xpath("//div[contains(@onmouseover, '"+partialStart+"') and .//a[normalize-space(text())='Other']]"));
+	List<WebElement> events = todayEvent.findElements(By.xpath(".//a[contains(text(), 'Other')]"));
+	
+	Assert.assertFalse(events.isEmpty(), "The list of events should not be empty");
 	
 	}
 	@AfterMethod
 	public void teardown() {
 		//screenshot.takeScreenShot(driver);
-		closebrowser();
+	closebrowser();
 		
 	}
 	

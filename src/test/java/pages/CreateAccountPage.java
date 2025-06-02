@@ -349,6 +349,17 @@ public void reportName(String timestamp) {
 	reportName.sendKeys(reportNameTime);
 }
 
+@FindBy(id = "saveReportDlg_DeveloperName")
+WebElement reportUniqueName;
 
+public void clickReportUniqueName() {
+	reportUniqueName.click();
+}
+@FindBy(xpath = "//button[text()='Save and Run Report']")
+WebElement saveandrunButton;
+
+public WebElement saveandrunButtonElement() {
+	return saveandrunButton;
+}
 
 }

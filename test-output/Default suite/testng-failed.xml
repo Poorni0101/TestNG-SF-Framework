@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Contactstest">
+      <class name="testcases.CreatOpportunitiestest">
         <methods>
-          <include name="cancelButtonInCreateNewView31"/>
-          <include name="viewAContact30"/>
-          <include name="beforeMethod"/>
-          <include name="checkMyContacts28"/>
-          <include name="createNewViewContactPage26"/>
           <include name="teardown"/>
-          <include name="createdContactIsInTheContactpage27"/>
-          <include name="viewAContact29"/>
-          <include name="saveAndNewButton32"/>
+          <include name="createNewOpty16"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testcases.Contactstest -->
+      </class> <!-- testcases.CreatOpportunitiestest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
