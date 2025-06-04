@@ -45,7 +45,7 @@ public class Contactstest extends Basetest{
 	}
 
 	
-	@Test (priority = 1)
+	@Test (priority = 2)
 	public void createNewContact25() {
 		Log.startTestCase("(TC25)");
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -65,7 +65,7 @@ public class Contactstest extends Basetest{
 	
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void createNewViewContactPage26() {
 		Log.startTestCase("(TC26)");
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -83,7 +83,7 @@ public class Contactstest extends Basetest{
 		Assert.assertEquals(actual, expected);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void createdContactIsInTheContactpage27() {
 		Log.startTestCase("(TC27)");
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -107,7 +107,7 @@ public class Contactstest extends Basetest{
 		Assert.assertEquals(actual, expected);
 	}
 	
-	@Test (priority = 4)
+	@Test (priority = 1)
 	public void checkMyContacts28() {
 		Log.startTestCase("(TC28)");
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
@@ -116,17 +116,21 @@ public class Contactstest extends Basetest{
 		basepage.waitforElement(contactspage.contactsTabElement(), 20);
 		basepage.click(contactspage.contactsTabElement());
 		
-		basepage.selectByVisibleTex(contactspage.verifyNameDropdownElement(), "My Contacts");
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		boolean actual = contactspage.checkIfThereAreValues();
+		
+		basepage.selectByVisibleTex(contactspage.verifyNameDropdownElement(), "My Contacts");
+		
+		
+		
+		boolean actual = contactspage.checkIfThereAreValuesBasic();
 		//boolean expected = true;
 		System.out.print(actual);
-		//Assert.assertTrue(actual, "Expected contact name 'Indian' not found in My Contacts.");
+		Assert.assertTrue(actual, "Expected contact name 'Indian' not found in My Contacts.");
 		//Assert.assertEquals(actual, expected);
 	}
 	

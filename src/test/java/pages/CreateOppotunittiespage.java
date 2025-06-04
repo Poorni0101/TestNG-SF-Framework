@@ -112,6 +112,9 @@ return expectedOptions;
 }
  @FindBy(id = "opp3_ileinner")
  WebElement actual;
+ public WebElement actualResultElement() {
+	 return actual;
+ }
  
  public String actualResult() {
 	return actual.getText();

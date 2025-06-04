@@ -71,6 +71,7 @@ public class CreatOpportunitiestest extends Basetest{
 		createoppo.selectLeadSourceDropdown();
 		
 		createoppo.clickSaveButton();
+		basepage.waitForElementToBeVisible(createoppo.actualResultElement());
 		String actualResult = createoppo.actualResult();
 		String expectedResult = "newautoopp";
 		Assert.assertEquals(actualResult, expectedResult);

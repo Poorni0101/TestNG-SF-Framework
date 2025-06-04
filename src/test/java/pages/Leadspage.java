@@ -71,6 +71,10 @@ public class Leadspage extends Basepage {
  @FindBy(xpath = "//select[@title='View:']" )
  WebElement actualdropdown;
  
+ public WebElement actualdropdownelement() {
+	 return actualdropdown;
+ }
+ 
  public String actualDropdown() {
 	 Select select = new Select(actualdropdown);
 		WebElement selectedoption = select.getFirstSelectedOption();

@@ -178,10 +178,15 @@ public void mySettingsOption7() {
 	basepage.waitforElement(usermenuDropdownpage.getUsernameDropdownElement(), 20);
 	
 	usermenuDropdownpage.clickUsermenuDropdown();
+	System.out.println("Clicked user menu dropdown");
 	usermenuDropdownpage.clickMysettings();
+	System.out.println("Clicked my settings");
 	usermenuDropdownpage.clickPersonal();
+	System.out.println("Clicked personal");
 	usermenuDropdownpage.clickLoginHistory();
+	System.out.println("Clicked login history");
 	String actual = usermenuDropdownpage.getLoginHistoryTitle();
+	System.out.println("Actual rsult login history title is :"+actual);
 	String expected = "Login History";
 	Assert.assertEquals(actual, expected,"TC7 step2 failed");
 	String actual1 = usermenuDropdownpage.getCsvLinkText();
@@ -217,6 +222,7 @@ basepage.waitforElement(usermenuDropdownpage.getUsernameDropdownElement(), 20);
 	
 	// validation
 	String actual2 = usermenuDropdownpage.getMessageDisplayed();
+	System.out.println("Final assertion actual :"+actual2);
 	String expected2 = "Your settings have been successfully saved.";
 	Assert.assertEquals(actual2, expected2, "TC7 step4 is failed");
 
@@ -239,17 +245,23 @@ public void developerConsole8() {
 	loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
 	loginpage.enterintoPassword("Poornitha123");
 	loginpage.clickonLoginButton();
-	basepage.waitforElement(loginpage.getUsernameElement(), 20);
+	System.out.println("Logging in");
+	//basepage.waitforElement(loginpage.getUsernameElement(), 20);
 	basepage.waitforElement(usermenuDropdownpage.getUsernameDropdownElement(), 20);
-	
+	System.out.println("Found usermenu drop down");
 	usermenuDropdownpage.clickUsermenuDropdown();
+	System.out.println("clicked usermenu drop down");
 	usermenuDropdownpage.clickDeveloperConsole();
+	System.out.println("clicked developer console");
+	System.out.println("Switching window");
 	String parentWindow = driver.getWindowHandle();
 	System.out.println("Parent Window - "+driver.getTitle());
 	basepage.switchToWindow();
 	driver.close();
+	System.out.println("closed the child window");
 	driver.switchTo().window(parentWindow);
 	String actual = basepage.getText(usermenuDropdownpage.homeTabElement());
+	System.out.println("Actual result is "+actual);
 	String expected = "Home";
 	Assert.assertEquals(actual, expected);
 }

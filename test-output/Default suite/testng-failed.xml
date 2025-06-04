@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.CreatOpportunitiestest">
+      <class name="testcases.Contactstest">
         <methods>
-          <include name="teardown"/>
-          <include name="createNewOpty16"/>
           <include name="beforeMethod"/>
+          <include name="checkMyContacts28"/>
+          <include name="teardown"/>
+          <include name="saveAndNewButton32"/>
         </methods>
-      </class> <!-- testcases.CreatOpportunitiestest -->
+      </class> <!-- testcases.Contactstest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

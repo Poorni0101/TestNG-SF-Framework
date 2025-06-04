@@ -82,17 +82,23 @@ public class Leadstest extends Basetest{
 		leadspage.clickLeadsTab();
 		leadspage.viewDropdow();
 			usermenuDropdownpage.clickUsermenuDropdown();
-			
+			System.out.println("going to logout");
 			loginpage.logoutButton();
+			System.out.println(" logout");
 			basepage.waitforElement(loginpage.getUserNameElement(), 20);
 			
 			loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
 			loginpage.enterintoPassword("Poornitha123");
+			System.out.println("going to login again");
 			loginpage.clickonLoginButton();
+			System.out.println("login success");
 			basepage.waitforElement(leadspage.getLeadTabelement(), 20);
 			leadspage.clickLeadsTab();
 			leadspage.clickGoButton();
+			System.out.println("pressed go button");
+			basepage.waitForElementToBeVisible(leadspage.actualdropdownelement());
 			String actual = leadspage.actualDropdown();
+			System.out.println("Actual for default view "+actual);
 			String expected = "My Unread Leads";
 			Assert.assertEquals(actual, expected);
 	}
@@ -120,7 +126,8 @@ public class Leadstest extends Basetest{
 		loginpage.enterintoEmail("poornitha.rameshkumar594@agentforce.com");
 		loginpage.enterintoPassword("Poornitha123");
 		loginpage.clickonLoginButton();
-		basepage.waitforElement(leadspage.getLeadTabelement(), 20);
+		//basepage.waitforElement(leadspage.getLeadTabelement(), 20);
+		basepage.waitForElementToBeVisible(leadspage.getLeadTabelement());
 		leadspage.clickLeadsTab();
 		leadspage.clickNewButton();
 		leadspage.typeLastName();
@@ -128,6 +135,7 @@ public class Leadstest extends Basetest{
 		leadspage.clickSaveButton();
 		basepage.waitforElement(leadspage.checkNameElement(), 20);
 		String actualResult = leadspage.getCheckName();
+		System.out.println("Actual Result "+actualResult);
 		String expectedResult24 = "ABCD";
 		Assert.assertEquals(expectedResult24, actualResult);
 	}

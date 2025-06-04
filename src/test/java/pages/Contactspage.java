@@ -108,7 +108,31 @@ public class Contactspage extends Basepage {
 	public List<WebElement> columnNameListElement(){
 		return columnName;
 	}
-	public boolean checkIfThereAreValues() {
+	@FindBy(xpath = "//div[contains(@class,'x-grid3-col-FULL_NAME')]//a/span")
+	List<WebElement> listElements;
+	
+	public List<WebElement> columnNameListElementDiff(){
+		return listElements;
+	}
+	public List<String> columnNamevalues() {
+		List<String> names = new ArrayList<>();
+		for(WebElement element :listElements ) {
+			String name = element.getText();
+			if(name.contains("Indian")) {
+				
+				System.out.println(name);
+				names.add(name);
+			}
+		}
+		return names;
+	}
+	public boolean checkIfThereAreValuesBasic() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		int listsize = columnName.size();
 		System.out.println(listsize);
 		//return !columnName.isEmpty();
@@ -118,6 +142,11 @@ public class Contactspage extends Basepage {
 			return false;
 		
 	}
+	public boolean checkIfThereAreValues() {
+		
+		 return !listElements.isEmpty();
+	}
+
 
 	@FindBy(xpath = "(//tr[contains(@class,'dataRow')]//th/a)[1]" )
 	WebElement firstAccount;
